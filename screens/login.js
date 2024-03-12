@@ -22,17 +22,22 @@ import{
 } from './../components/style';
 import { StatusBar } from 'expo-status-bar';
 import {Formik} from 'formik';
-import {View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {Octicons, Ionicons, Fontisto} from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const {primary, secondary, tertiary, darkLight, brand, green, red} = Colours;
 
 const Login = () => {
     const [hidePassword, setHidePassword] = useState(true);
+    const navigation = useNavigation();
+    const goToSignUp = () => navigation.navigate('Signup');
+    const goToMap = () => navigation.navigate('Map');
     return (
         <StyledContainer>
             <StatusBar style="dark" />
             <InnerContainer>
+            <ScrollView style={{width: '100%'}}>
                 <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')}/>
                 <PageTitle> Nom Nom</PageTitle>
                 <SubTitle>Log In</SubTitle>
@@ -67,7 +72,7 @@ const Login = () => {
                             setHidePassword={setHidePassword}
                         />
                         <MsgBox>...</MsgBox>
-                        <StyledButton onPress={handleSubmit}>
+                        <StyledButton /*onPress={handleSubmit}*/ onPress={goToMap}>
                             <ButtonText>
                                 Log In
                             </ButtonText>
@@ -75,7 +80,7 @@ const Login = () => {
                         <Line />
                         <ExtraView>
                             <ExtraText>Don't have an account? </ExtraText>
-                            <TextLink>
+                            <TextLink onPress={goToSignUp}>
                                 <TextLinkContent>
                                     Sign Up
                                 </TextLinkContent>
@@ -85,7 +90,7 @@ const Login = () => {
                     )
                     }
                 </Formik>
-
+            </ScrollView>
             </InnerContainer>
         </StyledContainer>
     );

@@ -32,7 +32,15 @@ export const InnerContainer = styled.View`
 export const PageLogo = styled.Image`
     width: 250px;
     height: 200px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
 `;
+
+export const SmallPageLogo = styled.Image`
+    width: 40px;
+    height: 40px;
+`;
+
 export const PageTitle = styled.Text`
     font-size: 30px;
     text-align: center;
@@ -47,10 +55,12 @@ export const SubTitle = styled.Text`
     letter-spacing: 1px;
     font-weight: bold;
     color: ${tertiary};
+    margin: 0 auto 0 auto;
 `;
 
 export const StyledFormArea = styled.View`
     width: 90%;
+    margin: 0 auto 0 auto;
 `;
 
 export const StyledTextInput = styled.TextInput`
@@ -118,6 +128,7 @@ export const ExtraView = styled.View`
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    padding-top: 5%;
 `;
 
 export const ExtraText = styled.Text`

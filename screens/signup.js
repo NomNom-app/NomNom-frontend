@@ -22,17 +22,21 @@ import{
 } from './../components/style';
 import { StatusBar } from 'expo-status-bar';
 import {Formik} from 'formik';
-import {View} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import {Octicons, Ionicons, Fontisto} from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const {primary, secondary, tertiary, darkLight, brand, green, red} = Colours;
 
 const Signup = () => {
     const [hidePassword, setHidePassword] = useState(true);
+    const navigation = useNavigation();
+    const goToLogin = () => navigation.navigate('Login');
     return (
         <StyledContainer>
             <StatusBar style="dark" />
             <InnerContainer>
+            <ScrollView style={{width: '100%'}}>
                 <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')}/>
                 <PageTitle> Nom Nom</PageTitle>
                 <SubTitle>Sign Up</SubTitle>
@@ -98,7 +102,7 @@ const Signup = () => {
                         <Line />
                         <ExtraView>
                             <ExtraText>Already have an account? </ExtraText>
-                            <TextLink>
+                            <TextLink onPress={goToLogin}>
                                 <TextLinkContent>
                                     Log In
                                 </TextLinkContent>
@@ -108,7 +112,7 @@ const Signup = () => {
                     )
                     }
                 </Formik>
-
+                </ScrollView>
             </InnerContainer>
         </StyledContainer>
     );
