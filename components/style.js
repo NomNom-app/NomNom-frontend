@@ -148,3 +148,8 @@ export const TextLinkContent = styled.Text`
     color: ${brand};
     font-size: 15px;
 `;
+
+export const Error = styled.Text`
+    color: ${red};  
+    font-size: 13px;
+`;

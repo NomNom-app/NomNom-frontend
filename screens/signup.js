@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     StyledContainer,
     InnerContainer,
@@ -18,24 +18,45 @@ import {
     ExtraView,
     ExtraText,
     TextLink,
-    TextLinkContent
+    TextLinkContent,
+    Error
 } from './../components/style';
 import { StatusBar } from 'expo-status-bar';
-import { Formik } from 'formik';
-import { View, ScrollView } from 'react-native';
+import { Formik, useFormik } from 'formik';
+import * as Yup from "yup";
+import { View, ScrollView, Text } from 'react-native';
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
-const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
+const getCharacterValidationError = (str) => {
+    return "Your password must have at least one " + str;
+};
 const Signup = () => {
     // For signing up:
     const [hidePassword, setHidePassword] = useState(true);
+    const [hideMatch, setMatch] = useState(true);
+    const formik = useFormik({
+        initialValues: { username: '', email: '', password: '', confirmPassword: '' },
+        validationSchema: Yup.object({
+            username: Yup.string().max(15, "Must be 15 characters or less!").required("Required"),
+            email: Yup.string().email("Invalid email address!").required("Required"),
+            password: Yup.string().required("Required").min(8, "Password must be at least 8 characters!").
+                matches(/[0-9]/, getCharacterValidationError("digit"))
+                .matches(/[a-z]/, getCharacterValidationError("lowercase"))
+                .matches(/[A-Z]/, getCharacterValidationError("uppercase")),
+            confirmPassword: Yup.string().oneOf([Yup.ref('password'), null], "Does not match with the password!").required("Required")
+        }),
+        onSubmit: (values) => {
+            console.log(values);
+        }
+    });
 
     // For navigation:
     const navigation = useNavigation();
     const goToLogin = () => navigation.navigate('Login');
+
     return (
         <ScrollView style={{ width: '100%' }}>
             <StyledContainer>
@@ -44,61 +65,62 @@ const Signup = () => {
                     <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')} />
                     <PageTitle> Nom Nom</PageTitle>
                     <SubTitle>Sign Up</SubTitle>
-
-                    <Formik
-                        initialValues={{ username: '', email: '', password: '', confirmPassword: '' }}
-                        onSubmit={(values) => { console.log(values); }}
-                    >
+                    <Formik>
                         {
-                            ({ handleChange, handleBlur, handleSubmit, values }) => (
+                            () => (
                                 <StyledFormArea>
                                     <MyTextInput
                                         label="Username"
                                         icon="person"
                                         placeholder="my_username"
                                         placeholderTextColor={darkLight}
-                                        onChangeText={handleChange('username')}
-                                        onBlur={handleBlur('username')}
-                                        value={values.username}
+                                        onChangeText={formik.handleChange('username')}
+                                        onBlur={formik.handleBlur('username')}
+                                        value={formik.values.username}
                                     />
+                                    {formik.touched.username && formik.errors.username ? <Error>{formik.errors.username}</Error> : null}
                                     <MyTextInput
                                         label="Email"
                                         icon="mail"
                                         placeholder="my@email.com"
                                         placeholderTextColor={darkLight}
-                                        onChangeText={handleChange('email')}
-                                        onBlur={handleBlur('email')}
-                                        value={values.email}
+                                        onChangeText={formik.handleChange('email')}
+                                        onBlur={formik.handleBlur('email')}
+                                        value={formik.values.email}
                                         keyboardType="email-address"
                                     />
+                                    {formik.touched.email && formik.errors.email ? <Error>{formik.errors.email}</Error> : null}
                                     <MyTextInput
                                         label="Password"
                                         icon="lock"
                                         placeholder="* * * * * * * *"
                                         placeholderTextColor={darkLight}
-                                        onChangeText={handleChange('password')}
-                                        onBlur={handleBlur('password')}
-                                        value={values.password}
+                                        onChangeText={formik.handleChange('password')}
+                                        onBlur={formik.handleBlur('password')}
+                                        value={formik.values.password}
                                         secureTextEntry={hidePassword}
                                         isPassword={true}
                                         hidePassword={hidePassword}
                                         setHidePassword={setHidePassword}
                                     />
+                                    {formik.touched.password && formik.errors.password ? <Error>{formik.errors.password}</Error> : null}
                                     <MyTextInput
                                         label="Confirm password"
                                         icon="lock"
                                         placeholder="* * * * * * * *"
                                         placeholderTextColor={darkLight}
-                                        onChangeText={handleChange('confirmPassword')}
-                                        onBlur={handleBlur('confirmPassword')}
-                                        value={values.confirmPassword}
-                                        secureTextEntry={hidePassword}
+                                        onChangeText={formik.handleChange('confirmPassword')}
+                                        onBlur={formik.handleBlur('confirmPassword')}
+                                        value={formik.values.confirmPassword}
+                                        secureTextEntry={hideMatch}
                                         isPassword={true}
-                                        hidePassword={hidePassword}
-                                        setHidePassword={setHidePassword}
+                                        hidePassword={hideMatch}
+                                        setHidePassword={setMatch}
                                     />
-                                    
-                                    <StyledButton onPress={handleSubmit}>
+                                    {formik.touched.confirmPassword && formik.errors.confirmPassword ?
+                                        <Error>{formik.errors.confirmPassword}</Error> : null}
+
+                                    <StyledButton onPress={formik.handleSubmit}>
                                         <ButtonText>
                                             Sign Up
                                         </ButtonText>
