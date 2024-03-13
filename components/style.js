@@ -32,7 +32,15 @@ export const InnerContainer = styled.View`
 export const PageLogo = styled.Image`
     width: 250px;
     height: 200px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
 `;
+
+export const SmallPageLogo = styled.Image`
+    width: 40px;
+    height: 40px;
+`;
+
 export const PageTitle = styled.Text`
     font-size: 30px;
     text-align: center;
@@ -47,10 +55,12 @@ export const SubTitle = styled.Text`
     letter-spacing: 1px;
     font-weight: bold;
     color: ${tertiary};
+    margin: 0 auto 0 auto;
 `;
 
 export const StyledFormArea = styled.View`
     width: 90%;
+    margin: 0 auto 0 auto;
 `;
 
 export const StyledTextInput = styled.TextInput`
@@ -94,6 +104,7 @@ export const StyledButton = styled.TouchableOpacity`
     border-radius: 5px;
     margin-vertical: 5px;
     height: 60px;
+    margin-top: 5%;
 `;
 
 export const ButtonText = styled.Text`
@@ -118,6 +129,7 @@ export const ExtraView = styled.View`
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    padding-top: 5%;
 `;
 
 export const ExtraText = styled.Text`
@@ -135,4 +147,9 @@ export const TextLink = styled.TouchableOpacity`
 export const TextLinkContent = styled.Text`
     color: ${brand};
     font-size: 15px;
+`;
+
+export const Error = styled.Text`
+    color: ${red};  
+    font-size: 13px;
 `;
