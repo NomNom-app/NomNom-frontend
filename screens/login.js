@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import{
+import React, { useState } from 'react';
+import {
     StyledContainer,
     InnerContainer,
     PageLogo,
@@ -21,12 +21,12 @@ import{
     TextLinkContent
 } from './../components/style';
 import { StatusBar } from 'expo-status-bar';
-import {Formik} from 'formik';
-import {ScrollView, View} from 'react-native';
-import {Octicons, Ionicons, Fontisto} from '@expo/vector-icons';
+import { Formik } from 'formik';
+import { ScrollView, View } from 'react-native';
+import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
-const {primary, secondary, tertiary, darkLight, brand, green, red} = Colours;
+const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 
 const Login = () => {
     const [hidePassword, setHidePassword] = useState(true);
@@ -34,73 +34,72 @@ const Login = () => {
     const goToSignUp = () => navigation.navigate('Signup');
     const goToMap = () => navigation.navigate('Map');
     return (
-        <StyledContainer>
-            <StatusBar style="dark" />
-            <InnerContainer>
-            <ScrollView style={{width: '100%'}}>
-                <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')}/>
-                <PageTitle> Nom Nom</PageTitle>
-                <SubTitle>Log In</SubTitle>
+        <ScrollView style={{ width: '100%', backgroundColor: Colours.primary}}>
+            <StyledContainer>
+                <StatusBar style="dark" />
+                <InnerContainer>
+                    <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')} />
+                    <PageTitle> Nom Nom</PageTitle>
+                    <SubTitle>Log In</SubTitle>
 
-                <Formik
-                    initialValues ={{username: '', password: ''}}
-                    onSubmit={(values) => {console.log(values);}}
-                >
-                    {
-                    ({handleChange, handleBlur, handleSubmit, values}) =>  (
-                    <StyledFormArea>
-                        <MyTextInput 
-                            label = "Username"
-                            icon="person"
-                            placeholder = "my_username"
-                            placeholderTextColor = {darkLight}
-                            onChangeText={handleChange('username')}
-                            onBlur={handleBlur('username')}
-                            value={values.username}
-                        />
-                        <MyTextInput 
-                            label = "Password"
-                            icon="lock"
-                            placeholder = "* * * * * * * *"
-                            placeholderTextColor = {darkLight}
-                            onChangeText={handleChange('password')}
-                            onBlur={handleBlur('password')}
-                            value={values.password}
-                            secureTextEntry={hidePassword}
-                            isPassword={true}
-                            hidePassword={hidePassword}
-                            setHidePassword={setHidePassword}
-                        />
-                        <MsgBox>...</MsgBox>
-                        <StyledButton /*onPress={handleSubmit}*/ onPress={goToMap}>
-                            <ButtonText>
-                                Log In
-                            </ButtonText>
-                        </StyledButton>
-                        <Line />
-                        <ExtraView>
-                            <ExtraText>Don't have an account? </ExtraText>
-                            <TextLink onPress={goToSignUp}>
-                                <TextLinkContent>
-                                    Sign Up
-                                </TextLinkContent>
-                            </TextLink>
-                        </ExtraView>
-                    </StyledFormArea>
-                    )
-                    }
-                </Formik>
-            </ScrollView>
-            </InnerContainer>
-        </StyledContainer>
+                    <Formik
+                        initialValues={{ username: '', password: '' }}
+                        onSubmit={(values) => { console.log(values); }}
+                    >
+                        {
+                            ({ handleChange, handleBlur, handleSubmit, values }) => (
+                                <StyledFormArea>
+                                    <MyTextInput
+                                        label="Username"
+                                        icon="person"
+                                        placeholder="my_username"
+                                        placeholderTextColor={darkLight}
+                                        onChangeText={handleChange('username')}
+                                        onBlur={handleBlur('username')}
+                                        value={values.username}
+                                    />
+                                    <MyTextInput
+                                        label="Password"
+                                        icon="lock"
+                                        placeholder="* * * * * * * *"
+                                        placeholderTextColor={darkLight}
+                                        onChangeText={handleChange('password')}
+                                        onBlur={handleBlur('password')}
+                                        value={values.password}
+                                        secureTextEntry={hidePassword}
+                                        isPassword={true}
+                                        hidePassword={hidePassword}
+                                        setHidePassword={setHidePassword}
+                                    />
+                                    <StyledButton /*onPress={handleSubmit}*/ onPress={goToMap}>
+                                        <ButtonText>
+                                            Log In
+                                        </ButtonText>
+                                    </StyledButton>
+                                    <Line />
+                                    <ExtraView>
+                                        <ExtraText>Don't have an account? </ExtraText>
+                                        <TextLink onPress={goToSignUp}>
+                                            <TextLinkContent>
+                                                Sign Up
+                                            </TextLinkContent>
+                                        </TextLink>
+                                    </ExtraView>
+                                </StyledFormArea>
+                            )
+                        }
+                    </Formik>
+                </InnerContainer>
+            </StyledContainer>
+        </ScrollView>
     );
 };
 
-const MyTextInput = ({label, icon, isPassword, hidePassword, setHidePassword, ...props}) => {
+const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, ...props }) => {
     return (
         <View>
             <LeftIcon>
-                <Octicons name={icon} size={30} color={brand}/>
+                <Octicons name={icon} size={30} color={brand} />
             </LeftIcon>
             <StyledInputLabel>
                 {label}
@@ -108,7 +107,7 @@ const MyTextInput = ({label, icon, isPassword, hidePassword, setHidePassword, ..
             <StyledTextInput {...props} />
             {isPassword && (
                 <RightIcon onPress={() => setHidePassword(!hidePassword)}>
-                    <Ionicons name={hidePassword ? 'eye-off-outline' : 'eye-outline'} size={30} color={darkLight}/>
+                    <Ionicons name={hidePassword ? 'eye-off-outline' : 'eye-outline'} size={30} color={darkLight} />
                 </RightIcon>
             )}
         </View>);
