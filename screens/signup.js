@@ -28,7 +28,7 @@ import { View, ScrollView, Text } from 'react-native';
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
-import { HandleSignUp, HandleLogin } from '../api';
+import { HandleSignUp } from '../api';
 
 const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 

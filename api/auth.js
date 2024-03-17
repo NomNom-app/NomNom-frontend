@@ -15,7 +15,13 @@ new Promise((resolve, reject) => {
   new Promise((resolve, reject) => {
     axios
       .post(`/Users/SignUp`, { username: username, email: email, password: password })
-      .then((x) => resolve(x.data))
+      .then((response) => {
+        
+        //hacky, sorry
+        alert('Sign Up successful!');
+
+        resolve(response.data)
+      })
       .catch((x) => {
         alert(x);
         reject(x);
