@@ -37,6 +37,7 @@ const MapComp = () => {
     const handleMapPress = (event) => {
         setClickedLocation(event.nativeEvent.coordinate);
         setSelectedLocation(null); // Reset selected location
+        setShowPopup(true);
     };
 
     const handleMarkerPress = (location) => {
@@ -45,10 +46,10 @@ const MapComp = () => {
     };
 
     const handleConfirmPlacement = () => {
-        setClickedLocation(null);
         setShowPopup(false);
-        if (selectedLocation) {
-            setPlacedLocations([...placedLocations, selectedLocation]);
+        if (clickedLocation) {
+            setPlacedLocations([...placedLocations, clickedLocation]);
+            setClickedLocation(null);
         }
     };
 
@@ -56,6 +57,11 @@ const MapComp = () => {
         setPlacedLocations(prevLocations =>
             prevLocations.filter(location => location !== selectedLocation)
         );
+        setSelectedLocation(null);
+        setShowPopup(false);
+    };
+
+    const handleCancel = () => {
         setShowPopup(false);
     };
 
@@ -77,14 +83,6 @@ const MapComp = () => {
                             coordinate={clickedLocation}
                             title="Clicked location"
                             pinColor="red"
-                            onPress={() => handleMarkerPress(clickedLocation)}
-                        />
-                    )}
-                    {selectedLocation && (
-                        <Marker
-                            coordinate={selectedLocation}
-                            title="Selected location"
-                            onPress={() => handleMarkerPress(selectedLocation)}
                         />
                     )}
                     {placedLocations.map((location, index) => (
@@ -92,19 +90,31 @@ const MapComp = () => {
                             key={index}
                             coordinate={location}
                             title={`Placed location ${index}`}
-                            pinColor="green"
+                            pinColor="red"
                             onPress={() => handleMarkerPress(location)}
                         />
                     ))}
+                    {selectedLocation && (
+                        <Marker
+                            coordinate={selectedLocation}
+                            title="Selected location"
+                        />
+                    )}
                 </MapView>
             )}
-            <PinConfirmationPopup visible={showPopup} onConfirm={handleConfirmPlacement} onDelete={handleDeletePin} />
+            <PinConfirmationPopup
+                visible={showPopup}
+                onConfirm={handleConfirmPlacement}
+                onDelete={handleDeletePin}
+                onCancel={handleCancel}
+                isPlaced={selectedLocation && placedLocations.some(loc => loc.latitude === selectedLocation.latitude && loc.longitude === selectedLocation.longitude)}
+            />
         </View>
     );
 };
 
 
-const PinConfirmationPopup = ({ visible, onConfirm, onDelete }) => {
+const PinConfirmationPopup = ({ visible, onConfirm, onDelete, onCancel, isPlaced }) => {
     return (
         <Modal
             animationType="slide"
@@ -115,13 +125,32 @@ const PinConfirmationPopup = ({ visible, onConfirm, onDelete }) => {
         >
             <View style={styles.popupContainer}>
                 <View style={styles.popupContent}>
-                    <Text style={styles.popupText}>Do you want to place the pin here?</Text>
-                    <TouchableOpacity style={styles.confirmButton} onPress={onConfirm}>
-                        <Text style={styles.confirmButtonText}>Place Pin</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.deleteButton} onPress={onDelete}>
-                        <Text style={styles.deleteButtonText}>Delete Pin</Text>
-                    </TouchableOpacity>
+                    {isPlaced ? (
+                        <>
+                            <Text style={styles.popupText}>Pin options</Text>
+
+                            <TouchableOpacity style={styles.confirmButton} onPress={undefined}>
+                                <Text style={styles.confirmButtonText}>Create post</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.deleteButton} onPress={onDelete}>
+                                <Text style={styles.confirmButtonText}>Delete Pin</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.cancelButton} onPress={onCancel}>
+                                <Text style={styles.confirmButtonText}>Cancel</Text>
+                            </TouchableOpacity>
+                        </>
+                    ) : (
+                        <>
+                            <Text style={styles.popupText}>Do you want to place the pin here?</Text>
+                            <TouchableOpacity style={styles.confirmButton} onPress={onConfirm}>
+                                <Text style={styles.confirmButtonText}>Place Pin</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.cancelButton} onPress={onCancel}>
+                                <Text style={styles.confirmButtonText}>Cancel</Text>
+                            </TouchableOpacity>
+                        </>
+                    )}
                 </View>
             </View>
         </Modal>
@@ -173,10 +202,18 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
+        marginBottom: 10
     },
     deleteButtonText: {
         color: 'white',
         fontSize: 16,
+    },
+    cancelButton: {
+        backgroundColor: 'gray',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        marginBottom: 10
     },
     modal: {
         zIndex: 9999,
