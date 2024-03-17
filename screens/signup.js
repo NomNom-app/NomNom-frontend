@@ -28,6 +28,8 @@ import { View, ScrollView, Text } from 'react-native';
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
+import { HandleSignUp } from '../api';
+
 const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 
 const getCharacterValidationError = (str) => {
@@ -50,6 +52,7 @@ const Signup = () => {
         }),
         onSubmit: (values) => {
             console.log(values);
+            HandleSignUp(values.username, values.email, values.password);
         }
     });
 

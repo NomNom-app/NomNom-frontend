@@ -1,0 +1,376 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\externals\\v8\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.expo\\metro\\externals\\v8\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\babel.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:babel.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\style.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\style.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\mapComp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\mapComp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.native.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.expo\\metro\\polyfill.native.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.expo\\metro\\polyfill.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\NomNom-frontend.iml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.idea\\NomNom-frontend.iml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\modules.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.idea\\modules.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.idea\\misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\user_api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\user_api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\assets\\images\\nom-nom_logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\images\\nom-nom_logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\screens\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js",
+              "RelativeDocumentMoniker": ".expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js",
+              "RelativeToolTip": ".expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\BackHandler\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:29:04.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppContainer.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js",
+              "RelativeDocumentMoniker": ".expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js",
+              "RelativeToolTip": ".expo\\metro\\shims\\react-native-web\\dist\\cjs\\exports\\AppRegistry\\AppContainer.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:29:01.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\externals\\v8\\index.js",
+              "RelativeDocumentMoniker": ".expo\\metro\\externals\\v8\\index.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\externals\\v8\\index.js",
+              "RelativeToolTip": ".expo\\metro\\externals\\v8\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:28:37.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-03-17T15:28:27.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-17T15:28:26.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package-lock.json",
+              "RelativeDocumentMoniker": "package-lock.json",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\package-lock.json",
+              "RelativeToolTip": "package-lock.json",
+              "ViewState": "AQIAAGQCAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-17T15:28:01.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "babel.config.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\babel.config.js",
+              "RelativeDocumentMoniker": "babel.config.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\babel.config.js",
+              "RelativeToolTip": "babel.config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:27:56.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.json",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\app.json",
+              "RelativeDocumentMoniker": "app.json",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\app.json",
+              "RelativeToolTip": "app.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-17T15:27:54.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\App.js",
+              "RelativeDocumentMoniker": "App.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\App.js",
+              "RelativeToolTip": "App.js",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:27:45.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\style.js",
+              "RelativeDocumentMoniker": "components\\style.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\style.js",
+              "RelativeToolTip": "components\\style.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:27:08.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "polyfill.native.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.native.js",
+              "RelativeDocumentMoniker": ".expo\\metro\\polyfill.native.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.native.js",
+              "RelativeToolTip": ".expo\\metro\\polyfill.native.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:26:58.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "polyfill.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.js",
+              "RelativeDocumentMoniker": ".expo\\metro\\polyfill.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.expo\\metro\\polyfill.js",
+              "RelativeToolTip": ".expo\\metro\\polyfill.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:26:57.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NomNom-frontend.iml",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\NomNom-frontend.iml",
+              "RelativeDocumentMoniker": ".idea\\NomNom-frontend.iml",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\NomNom-frontend.iml",
+              "RelativeToolTip": ".idea\\NomNom-frontend.iml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-17T15:26:52.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "modules.xml",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\modules.xml",
+              "RelativeDocumentMoniker": ".idea\\modules.xml",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\modules.xml",
+              "RelativeToolTip": ".idea\\modules.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-03-17T15:26:51.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "misc.xml",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\misc.xml",
+              "RelativeDocumentMoniker": ".idea\\misc.xml",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\.idea\\misc.xml",
+              "RelativeToolTip": ".idea\\misc.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-03-17T15:26:49.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "nom-nom_logo.png - PNG [800x565, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\assets\\images\\nom-nom_logo.png",
+              "RelativeDocumentMoniker": "assets\\images\\nom-nom_logo.png",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\assets\\images\\nom-nom_logo.png - PNG [800x565, 32 bit, PNG]",
+              "RelativeToolTip": "assets\\images\\nom-nom_logo.png - PNG [800x565, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-03-17T15:26:32.379Z",
+              "EditorCaption": " - PNG [800x565, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "mapComp.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\mapComp.js",
+              "RelativeDocumentMoniker": "components\\mapComp.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\components\\mapComp.js",
+              "RelativeToolTip": "components\\mapComp.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:26:18.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "map.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\screens\\map.js",
+              "RelativeDocumentMoniker": "screens\\map.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\screens\\map.js",
+              "RelativeToolTip": "screens\\map.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:26:11.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "user_api.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\user_api.js",
+              "RelativeDocumentMoniker": "api\\user_api.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\user_api.js",
+              "RelativeToolTip": "api\\user_api.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:25:51.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\index.js",
+              "RelativeDocumentMoniker": "api\\index.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\index.js",
+              "RelativeToolTip": "api\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:25:49.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "axios.js",
+              "DocumentMoniker": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\axios.js",
+              "RelativeDocumentMoniker": "api\\axios.js",
+              "ToolTip": "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\NomNom-frontend\\api\\axios.js",
+              "RelativeToolTip": "api\\axios.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-17T15:25:39.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

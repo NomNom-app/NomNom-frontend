@@ -26,6 +26,8 @@ import { ScrollView, View } from 'react-native';
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
+import { HandleLogin } from '../api';
+
 const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 
 const Login = () => {
