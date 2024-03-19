@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUp/> renders correctly 1`] = `
+<RCTScrollView
+  style={
+    {
+      "width": "100%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "paddingBottom": 25,
+          "paddingLeft": 25,
+          "paddingRight": 25,
+          "paddingTop": 64,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          resizeMode="cover"
+          source={1}
+          style={
+            {
+              "height": 200,
+              "justifyContent": "center",
+              "marginBottom": 0,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 0,
+              "width": 250,
+            }
+          }
+        />
+        <Text
+          style={
+            {
+              "color": "#616393",
+              "fontSize": 30,
+              "fontWeight": "bold",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+           Nom Nom
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#8A8CD2",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "letterSpacing": 1,
+              "marginBottom": 0,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 0,
+            }
+          }
+        >
+          Sign Up
+        </Text>
+        <View
+          style={
+            {
+              "marginBottom": 0,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 0,
+              "width": "90%",
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                {
+                  "left": 15,
+                  "position": "absolute",
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#8A8CD2",
+                  "fontSize": 13,
+                  "textAlign": "left",
+                }
+              }
+            >
+              Username
+            </Text>
+            <TextInput
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="my_username"
+              placeholderTextColor="#9CA3AF"
+              style={
+                {
+                  "backgroundColor": "#E5E7EB",
+                  "borderBottomLeftRadius": 5,
+                  "borderBottomRightRadius": 5,
+                  "borderTopLeftRadius": 5,
+                  "borderTopRightRadius": 5,
+                  "color": "#8A8CD2",
+                  "fontSize": 16,
+                  "height": 60,
+                  "marginBottom": 10,
+                  "marginVertical": 3,
+                  "paddingBottom": 15,
+                  "paddingLeft": 55,
+                  "paddingRight": 55,
+                  "paddingTop": 15,
+                }
+              }
+              value=""
+            />
+          </View>
+          <View>
+            <View
+              style={
+                {
+                  "left": 15,
+                  "position": "absolute",
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#8A8CD2",
+                  "fontSize": 13,
+                  "textAlign": "left",
+                }
+              }
+            >
+              Email
+            </Text>
+            <TextInput
+              keyboardType="email-address"
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="my@email.com"
+              placeholderTextColor="#9CA3AF"
+              style={
+                {
+                  "backgroundColor": "#E5E7EB",
+                  "borderBottomLeftRadius": 5,
+                  "borderBottomRightRadius": 5,
+                  "borderTopLeftRadius": 5,
+                  "borderTopRightRadius": 5,
+                  "color": "#8A8CD2",
+                  "fontSize": 16,
+                  "height": 60,
+                  "marginBottom": 10,
+                  "marginVertical": 3,
+                  "paddingBottom": 15,
+                  "paddingLeft": 55,
+                  "paddingRight": 55,
+                  "paddingTop": 15,
+                }
+              }
+              value=""
+            />
+          </View>
+          <View>
+            <View
+              style={
+                {
+                  "left": 15,
+                  "position": "absolute",
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#8A8CD2",
+                  "fontSize": 13,
+                  "textAlign": "left",
+                }
+              }
+            >
+              Password
+            </Text>
+            <TextInput
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="* * * * * * * *"
+              placeholderTextColor="#9CA3AF"
+              secureTextEntry={true}
+              style={
+                {
+                  "backgroundColor": "#E5E7EB",
+                  "borderBottomLeftRadius": 5,
+                  "borderBottomRightRadius": 5,
+                  "borderTopLeftRadius": 5,
+                  "borderTopRightRadius": 5,
+                  "color": "#8A8CD2",
+                  "fontSize": 16,
+                  "height": 60,
+                  "marginBottom": 10,
+                  "marginVertical": 3,
+                  "paddingBottom": 15,
+                  "paddingLeft": 55,
+                  "paddingRight": 55,
+                  "paddingTop": 15,
+                }
+              }
+              value=""
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                  "position": "absolute",
+                  "right": 15,
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+          </View>
+          <View>
+            <View
+              style={
+                {
+                  "left": 15,
+                  "position": "absolute",
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#8A8CD2",
+                  "fontSize": 13,
+                  "textAlign": "left",
+                }
+              }
+            >
+              Confirm password
+            </Text>
+            <TextInput
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="* * * * * * * *"
+              placeholderTextColor="#9CA3AF"
+              secureTextEntry={true}
+              style={
+                {
+                  "backgroundColor": "#E5E7EB",
+                  "borderBottomLeftRadius": 5,
+                  "borderBottomRightRadius": 5,
+                  "borderTopLeftRadius": 5,
+                  "borderTopRightRadius": 5,
+                  "color": "#8A8CD2",
+                  "fontSize": 16,
+                  "height": 60,
+                  "marginBottom": 10,
+                  "marginVertical": 3,
+                  "paddingBottom": 15,
+                  "paddingLeft": 55,
+                  "paddingRight": 55,
+                  "paddingTop": 15,
+                }
+              }
+              value=""
+            />
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                  "position": "absolute",
+                  "right": 15,
+                  "top": 38,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text />
+            </View>
+          </View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#616393",
+                "borderBottomLeftRadius": 5,
+                "borderBottomRightRadius": 5,
+                "borderTopLeftRadius": 5,
+                "borderTopRightRadius": 5,
+                "height": 60,
+                "justifyContent": "center",
+                "marginTop": "5%",
+                "marginVertical": 5,
+                "opacity": 1,
+                "paddingBottom": 15,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 15,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Sign Up
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "backgroundColor": "#9CA3AF",
+                "height": 1,
+                "marginVertical": 10,
+                "width": "100%",
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": "5%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "alignContent": "center",
+                  "color": "#8A8CD2",
+                  "fontSize": 15,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              Already have an account? 
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#616393",
+                    "fontSize": 15,
+                  }
+                }
+              >
+                Log In
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

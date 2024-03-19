@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
+import { Marker } from "react-native-maps";
 import Constants from 'expo-constants';
 
 const StatusBarHeight = Constants.statusBarHeight;

@@ -42,7 +42,7 @@ const Signup = () => {
     const formik = useFormik({
         initialValues: { username: '', email: '', password: '', confirmPassword: '' },
         validationSchema: Yup.object({
-            username: Yup.string().max(15, "Must be 15 characters or less!").required("Required"),
+            username: Yup.string().max(15, "Must be 15 characters or less!").min(5, "Must be at least 5 characters!").required("Required"),
             email: Yup.string().email("Invalid email address!").required("Required"),
             password: Yup.string().required("Required").min(8, "Password must be at least 8 characters!").
                 matches(/[0-9]/, getCharacterValidationError("digit"))
@@ -80,6 +80,7 @@ const Signup = () => {
                                         onChangeText={formik.handleChange('username')}
                                         onBlur={formik.handleBlur('username')}
                                         value={formik.values.username}
+                                        testID="username"
                                     />
                                     {formik.touched.username && formik.errors.username ? <Error>{formik.errors.username}</Error> : null}
                                     <MyTextInput
@@ -91,6 +92,7 @@ const Signup = () => {
                                         onBlur={formik.handleBlur('email')}
                                         value={formik.values.email}
                                         keyboardType="email-address"
+                                        testID="email"
                                     />
                                     {formik.touched.email && formik.errors.email ? <Error>{formik.errors.email}</Error> : null}
                                     <MyTextInput
@@ -105,6 +107,7 @@ const Signup = () => {
                                         isPassword={true}
                                         hidePassword={hidePassword}
                                         setHidePassword={setHidePassword}
+                                        testID="password"
                                     />
                                     {formik.touched.password && formik.errors.password ? <Error>{formik.errors.password}</Error> : null}
                                     <MyTextInput
@@ -119,16 +122,16 @@ const Signup = () => {
                                         isPassword={true}
                                         hidePassword={hideMatch}
                                         setHidePassword={setMatch}
+                                        testID="match"
                                     />
                                     {formik.touched.confirmPassword && formik.errors.confirmPassword ?
                                         <Error>{formik.errors.confirmPassword}</Error> : null}
 
-                                    <StyledButton onPress={formik.handleSubmit}>
+                                    <StyledButton testID="signUpButton" onPress={formik.handleSubmit}>
                                         <ButtonText>
                                             Sign Up
                                         </ButtonText>
                                     </StyledButton>
-                                    <Line />
                                     <ExtraView>
                                         <ExtraText>Already have an account? </ExtraText>
                                         <TextLink onPress={goToLogin}>
