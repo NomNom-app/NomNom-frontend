@@ -4,19 +4,16 @@ import { View, Text, StyleSheet } from "react-native";
 import {
     Colours
 } from '../components/style';
-
-import MapView from "react-native-maps";
 import MapComp from "../components/mapComp";
 
-const {primary, secondary, tertiary, darkLight, brand, green, red} = Colours;
+const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 
 const Map = () => {
-    return(
+    return (
         <View>
             <StatusBar style="dark" />
-            <MapComp/>
+            <MapComp />
         </View>
-        
     );
 };
 export default Map;
