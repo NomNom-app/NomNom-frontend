@@ -34,7 +34,7 @@ const Login = () => {
     const [hidePassword, setHidePassword] = useState(true);
     const navigation = useNavigation();
     const goToSignUp = () => navigation.navigate('Signup');
-    const goToMap = () => navigation.navigate('Map');
+    const goToMap = () => navigation.navigate('Home');
     return (
         <ScrollView style={{ width: '100%', backgroundColor: Colours.primary}}>
             <StyledContainer>
