@@ -68,7 +68,7 @@ const Signup = () => {
                     <PageLogo resizeMode="cover" source={require('./../assets/images/nom-nom_logo.png')} />
                     <PageTitle> Nom Nom</PageTitle>
                     <SubTitle>Sign Up</SubTitle>
-                    <Formik>
+                    <Formik testID="signUpForm">
                         {
                             () => (
                                 <StyledFormArea>
