@@ -35,6 +35,9 @@ const { primary, secondary, tertiary, darkLight, brand, green, red } = Colours;
 const getCharacterValidationError = (str) => {
     return "Your password must have at least one " + str;
 };
+
+const emailRegex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+
 const Signup = () => {
     // For signing up:
     const [hidePassword, setHidePassword] = useState(true);
@@ -43,7 +46,7 @@ const Signup = () => {
         initialValues: { username: '', email: '', password: '', confirmPassword: '' },
         validationSchema: Yup.object({
             username: Yup.string().max(15, "Must be 15 characters or less!").min(5, "Must be at least 5 characters!").required("Required"),
-            email: Yup.string().email("Invalid email address!").required("Required"),
+            email: Yup.string().email("Invalid email address!").matches(emailRegex, "Invalid email address!").required("Required"),
             password: Yup.string().required("Required").min(8, "Password must be at least 8 characters!").
                 matches(/[0-9]/, getCharacterValidationError("digit"))
                 .matches(/[a-z]/, getCharacterValidationError("lowercase"))
