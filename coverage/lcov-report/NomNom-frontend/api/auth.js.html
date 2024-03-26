@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.38% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/13</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.38% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/13</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -92,64 +92,76 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import axios from "./axios";
 &nbsp;
-export const HandleLogin = <span class="fstat-no" title="function not covered" >(u</span>sername, password) =&gt;
-<span class="cstat-no" title="statement not covered" >new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  axios</span>
-    .post(`/Users/Login`, { username: username, password: password })
-    .then(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; <span class="cstat-no" title="statement not covered" >resolve(x.data))</span>
-    .catch(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; {
-<span class="cstat-no" title="statement not covered" >      alert(x);</span>
-<span class="cstat-no" title="statement not covered" >      reject(x);</span>
-    });
-});
-&nbsp;
-  export const HandleSignUp = <span class="fstat-no" title="function not covered" >(u</span>sername, email, password) =&gt;
+export const HandleLogin = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(u</span>sername, password) =&gt;</span>
+{
 <span class="cstat-no" title="statement not covered" >  new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    axios</span>
-      .post(`/Users/SignUp`, { username: username, email: email, password: password })
-      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
-        
-        //hacky, sorry
-<span class="cstat-no" title="statement not covered" >        alert('Sign Up successful!');</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        resolve(response.data)</span>
-      })
+      .post(`/Users/Login`, { username: username, password: password })
+      .then(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; <span class="cstat-no" title="statement not covered" >resolve(x.data))</span>
       .catch(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; {
 <span class="cstat-no" title="statement not covered" >        alert(x);</span>
 <span class="cstat-no" title="statement not covered" >        reject(x);</span>
       });
   });
+}
+&nbsp;
+export const HandleSignUp = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(u</span>sername, email, password) =&gt;</span>
+{
+<span class="cstat-no" title="statement not covered" >  new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    axios</span>
+    .post(`/Users/SignUp`, { username: username, email: email, password: password })
+    .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; {
+  
+    //hacky, sorry
+<span class="cstat-no" title="statement not covered" >    alert('Sign Up successful!');</span>
+  
+<span class="cstat-no" title="statement not covered" >    resolve(response.data)</span>
+    })
+    .catch(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; {
+<span class="cstat-no" title="statement not covered" >    alert(x);</span>
+<span class="cstat-no" title="statement not covered" >    reject(x);</span>
+    });
+    });
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -157,7 +169,7 @@ export const HandleLogin = <span class="fstat-no" title="function not covered" >
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-03-19T15:41:59.428Z
+                at 2024-03-26T16:17:24.034Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
